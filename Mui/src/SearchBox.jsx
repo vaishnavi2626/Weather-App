@@ -13,7 +13,7 @@ export default function SearchBox({updateInfo}){
         let jsonResponse=await response.json();
         console.log(jsonResponse);
         let result={
-          city:city,
+          city:jsonResponse.name,
           temp:jsonResponse.main.temp,
           tempMin:jsonResponse.main.temp_min,
           tempMax:jsonResponse.main.temp_max,
